@@ -1,0 +1,13 @@
+local GloriousHubGamesList = {
+    [2888719930] = "Boxing Simulator 2",
+}
+
+for i,v in next, GloriousHubGamesList do
+    GloriousyHubGamesList[i] = table.concat(v:split(' '), '_')
+end
+
+if GloriousHubGamesList[game.PlaceId] ~= nil then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ewaveq1/Glorious-Hub/main/Games/" ..game.PlaceId, true))()
+else
+    return "Game not supported!"    
+end
